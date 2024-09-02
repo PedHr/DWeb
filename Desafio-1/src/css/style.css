@@ -40,9 +40,11 @@ hr{
 }
 .grid-container main{
     display: grid;
+    grid-column-start:1;
+    grid-column-end:5;
+}
+.grid-container main img{
+    grid-column: 2/4;
 }
 
-.grid-container main .cartao-principal img{
-    grid-column-start: 2;
-    background-color: black;
-}
+
