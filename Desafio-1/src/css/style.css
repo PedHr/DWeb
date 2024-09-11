@@ -38,10 +38,20 @@ hr{
 .grid-container header .atalhos a:hover{
     color:red;
 }
+.grid-container .capa{
+ 
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.grid-container .capa img{
+    height: auto;
+    width: 100%;
+}
 .grid-container main{
     display: grid;
-    grid-column-start:1;
-    grid-column-end:5;
+    /* grid-template-columns: 20% 60% 20%; */
+
 }
 .grid-container main img{
     grid-column: 2/4;
