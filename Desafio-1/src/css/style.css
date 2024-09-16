@@ -3,7 +3,7 @@ body{
     margin:0;
 }
 
-hr{
+.hr-a{
     border: 1px solid rgb(29, 29, 123);
     background-color: rgb(29, 29, 123);;
     height:6px;
@@ -39,7 +39,6 @@ hr{
     color:red;
 }
 .grid-container .capa{
- 
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -47,14 +46,29 @@ hr{
 .grid-container .capa img{
     height: auto;
     width: 100%;
+    grid-row:2;
 }
-.grid-container main{
+
+.grid-container .texto{
+    grid-column:2;
+    grid-row:3;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+/* .grid-container main{
     display: grid;
     /* grid-template-columns: 20% 60% 20%; */
 
-}
+/* }
 .grid-container main img{
     grid-column: 2/4;
-}
+    grid-row:2;
+}  */
 
 
