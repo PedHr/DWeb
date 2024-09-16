@@ -12,14 +12,14 @@ body{
 
 .grid-container{
     display:grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: 20vh auto auto;
 }
 
 .grid-container header{
     display:flex;
     grid-column: 1/5;
-    background-color:rgb(213, 213, 213);
+    background-color:white;
     grid-row: auto;
     justify-content:space-evenly;
     align-items:center;
@@ -41,6 +41,17 @@ body{
 .grid-container .capa{
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+.grid-container a.lado_e{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #EFEFEF;
+}
+.grid-container a.lado_d{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #EFEFEF;
 }
 
 .grid-container .capa img{
