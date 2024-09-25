@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        vertical-align: baseline;
+        list-style: none;
+        border: 0;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        gap: 15px;
+      }
+
+      div {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        color: white;
+      }
+
+      .basic {
+        background-color: rgb(164, 164, 178);
+      }
+
+      .standard {
+        background-color: rgb(79, 79, 142);
+      }
+
+      .premium {
+        background-color: gold;
+      }
+
+      .basic:hover {
+        background-color: rgb(130, 130, 140);
+      }
+
+      .standard:hover {
+        background-color: rgb(60, 60, 100);
+      }
+
+      .premium:hover {
+        background-color: rgb(230, 197, 15);
+      }
+
+      @media only screen and (min-width: 600px) {
+        section {
+          flex-direction: row;
+          height: 100vh;
+          width: 100%;
+          background-color: rgb(109, 222, 109);
+          justify-content: center;
+          transition: background-color 2s ease;
+          gap: 30px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        section {
+          background-color: rgb(28, 78, 28);
+          transition: background-color 1s ease;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="basic">Plano Básico</div>
+      <div class="standard">Plano Padrão</div>
+      <div class="premium">Plano Premium</div>
+    </section>
+  </body>
+</html>

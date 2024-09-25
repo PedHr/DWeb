@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.1" />
+    <title>Galeria de Fotos</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #d27878;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover; 
+            border: 1px solid;
+        }
+
+        @media (min-width: 769px) {
+            img {
+                width: calc(33.33% - 30px); /* 3 colunas */
+                transition: all 1s ease;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            img {
+                width: calc(50% - 20px);
+                transition: all 1s ease;
+
+            }
+        }
+
+        @media (max-width: 480px) {
+            img {
+                width: calc(100% - 30px); 
+                transition: width 0.1s ease;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg" />
+        <img src="/Exercicios com Flex/assets/camiseta.jpg " />
+    </main>
+</body>
+</html>

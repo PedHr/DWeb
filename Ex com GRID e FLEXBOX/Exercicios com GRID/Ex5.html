@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        text-align: center;
+      }
+      header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: solid 1px;
+        background-color: gray;
+        text-align: center;
+      }
+      footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: solid 1px;
+        background-color: red;
+      }
+      sidebar {
+        border: solid 1px black;
+      }
+      main {
+        border: solid 1px black;
+      }
+      aside {
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <header>Header</header>
+      <sidebar>Sidebar</sidebar>
+      <main>main</main>
+      <aside>Aside</aside>
+      <footer>footer</footer>
+    </section>
+  </body>
+</html>

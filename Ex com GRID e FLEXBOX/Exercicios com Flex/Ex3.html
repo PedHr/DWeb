@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+        }
+
+        header {
+            background: black;
+            color: aliceblue;
+            height: 100px;
+            width: 100vw;
+            text-align: center;
+        }
+
+        main {
+            background: cyan;
+            height: 400px;
+            width: 75vw;
+            text-align: center;
+        }
+
+        aside {
+            background: green;
+            color: aliceblue;
+            height: 400px;
+            width: 25vw;
+            text-align: center;
+        }
+
+        footer {
+            background-color: brown;
+            height: 100px;
+            width: 100vw;
+        }
+
+        @media only screen and (max-width: 600px) {
+            main {
+                width: 100vw;
+            }
+
+            aside {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <main>Principal</main>
+    <aside>Barra lateral</aside>
+    <footer>Footer</footer>
+</body>
+
+</html>
