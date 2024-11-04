@@ -1,0 +1,27 @@
+body{
+  background-color: #697565;
+}
+
+header{
+  background-color: #181C14;
+}
+
+header a span{
+  color:white;
+  margin-left: 10px;
+}
+
+.card-header {
+  background-color: #4CAF50; /* Verde */
+  color: #fff; /* Branco */
+}
+
+.btn-custom {
+  background-color: #ff5733; /* Laranja */
+  color: #fff; /* Branco */
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #e14b28; /* Tom mais escuro para hover */
+}
